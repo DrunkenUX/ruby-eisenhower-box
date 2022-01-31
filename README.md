@@ -1,24 +1,4 @@
-# README
+# Ruby Eisenhower Box
+Code from our Eisenhower Box project featured in [episode 107](https://drunkenux.com/podcast/dux107).
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Future episodes will cover styling, JavaScript, tests, etc...
