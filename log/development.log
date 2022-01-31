@@ -1,0 +1,1080 @@
+Started GET "/" for 127.0.0.1 at 2022-01-27 20:15:41 -0600
+  
+ActiveRecord::NoDatabaseError (We could not find your database: dux_ruby_development. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.1) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (7.0.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.1) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.1) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.1) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.1) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.1) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.1) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.1) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.1) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.1) lib/puma/configuration.rb:252:in `call'
+puma (5.6.1) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.1) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.1) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.1) lib/puma/server.rb:441:in `process_client'
+puma (5.6.1) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (215.4ms)[0m  [1m[35mCREATE DATABASE "dux_ruby_development" ENCODING = 'unicode'[0m
+  [1m[35m (174.6ms)[0m  [1m[35mCREATE DATABASE "dux_ruby_test" ENCODING = 'unicode'[0m
+Started GET "/" for 127.0.0.1 at 2022-01-27 20:16:43 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/fienen/.rvm/gems/ruby-3.0.0/gems/railties-7.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/fienen/.rvm/gems/ruby-3.0.0/gems/railties-7.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.0ms | Allocations: 363)
+Completed 200 OK in 7ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 3853)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-27 20:34:57 -0600
+  [1m[35m (11.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20220128022716_create_tasks.rb
+
+
+):
+  
+activerecord (7.0.1) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.1) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.1) lib/active_support/file_update_checker.rb:83:in `execute'
+activesupport (7.0.1) lib/active_support/file_update_checker.rb:93:in `execute_if_updated'
+activerecord (7.0.1) lib/active_record/migration.rb:599:in `block in call'
+activerecord (7.0.1) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.1) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.1) lib/puma/configuration.rb:252:in `call'
+puma (5.6.1) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.1) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.1) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.1) lib/puma/server.rb:441:in `process_client'
+puma (5.6.1) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5603432807732677575)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTasks (20220128022716)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "tasks" ("id" bigserial primary key, "description" character varying, "complete" boolean, "important" boolean, "urgent" boolean, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220128022716"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-01-28 02:35:28.505701"], ["updated_at", "2022-01-28 02:35:28.505701"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5603432807732677575)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5603432807732677575)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5603432807732677575)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-01-27 20:36:10 -0600
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/fienen/.rvm/gems/ruby-3.0.0/gems/railties-7.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/fienen/.rvm/gems/ruby-3.0.0/gems/railties-7.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.9ms | Allocations: 354)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 1175)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2022-01-27 20:36:25 -0600
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1196)
+  Rendered layout layouts/application.html.erb (Duration: 168.8ms | Allocations: 89008)
+Completed 200 OK in 171ms (Views: 169.4ms | ActiveRecord: 0.4ms | Allocations: 90681)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2022-01-27 20:36:28 -0600
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 14.3ms | Allocations: 5642)
+  Rendered tasks/new.html.erb within layouts/application (Duration: 16.7ms | Allocations: 5956)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 7999)
+Completed 200 OK in 28ms (Views: 20.0ms | ActiveRecord: 2.1ms | Allocations: 13845)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2022-01-27 20:37:16 -0600
+Processing by TasksController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"description"=>"This is my first task", "complete"=>"0", "important"=>"1", "urgent"=>"1"}, "commit"=>"Create Task"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:27:in `block in create'
+  [1m[36mTask Create (0.5ms)[0m  [1m[32mINSERT INTO "tasks" ("description", "complete", "important", "urgent", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["description", "This is my first task"], ["complete", false], ["important", true], ["urgent", true], ["created_at", "2022-01-28 02:37:16.259603"], ["updated_at", "2022-01-28 02:37:16.259603"]]
+  ↳ app/controllers/tasks_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/tasks/1
+Completed 302 Found in 7ms (ActiveRecord: 1.5ms | Allocations: 3462)
+
+
+Started GET "/tasks/1" for 127.0.0.1 at 2022-01-27 20:37:16 -0600
+Processing by TasksController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:63:in `set_task'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/_task.html.erb (Duration: 0.4ms | Allocations: 261)
+  Rendered tasks/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1332)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 3368)
+Completed 200 OK in 10ms (Views: 4.7ms | ActiveRecord: 0.6ms | Allocations: 6313)
+
+
+Started GET "/tasks/1/edit" for 127.0.0.1 at 2022-01-27 20:40:00 -0600
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:63:in `set_task'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 1.7ms | Allocations: 1283)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1574)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 3609)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.2ms | Allocations: 4474)
+
+
+Started PATCH "/tasks/1" for 127.0.0.1 at 2022-01-27 20:40:05 -0600
+Processing by TasksController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"description"=>"This is my first task", "complete"=>"0", "important"=>"0", "urgent"=>"1"}, "commit"=>"Update Task", "id"=>"1"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:63:in `set_task'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:40:in `block in update'
+  [1m[36mTask Update (0.4ms)[0m  [1m[33mUPDATE "tasks" SET "important" = $1, "updated_at" = $2 WHERE "tasks"."id" = $3[0m  [["important", false], ["updated_at", "2022-01-28 02:40:05.741429"], ["id", 1]]
+  ↳ app/controllers/tasks_controller.rb:40:in `block in update'
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:40:in `block in update'
+Redirected to http://127.0.0.1:3000/tasks/1
+Completed 302 Found in 8ms (ActiveRecord: 3.3ms | Allocations: 2831)
+
+
+Started GET "/tasks/1" for 127.0.0.1 at 2022-01-27 20:40:05 -0600
+Processing by TasksController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:63:in `set_task'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/_task.html.erb (Duration: 0.2ms | Allocations: 24)
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 503)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 2538)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 3346)
+
+
+Started GET "/tasks/" for 127.0.0.1 at 2022-01-27 20:41:17 -0600
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered tasks/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 883)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2943)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms | Allocations: 3275)
+
+
+Started GET "/tasks/1" for 127.0.0.1 at 2022-01-27 20:41:27 -0600
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:63:in `set_task'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 474)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 2509)
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.3ms | Allocations: 3315)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2022-01-27 20:41:58 -0600
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 2.0ms | Allocations: 1233)
+  Rendered tasks/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1326)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 3369)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 3708)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2022-01-27 20:42:06 -0600
+Processing by TasksController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"description"=>"This is another task", "complete"=>"0", "important"=>"1", "urgent"=>"1"}, "commit"=>"Create Task"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:27:in `block in create'
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("description", "complete", "important", "urgent", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["description", "This is another task"], ["complete", false], ["important", true], ["urgent", true], ["created_at", "2022-01-28 02:42:06.559161"], ["updated_at", "2022-01-28 02:42:06.559161"]]
+  ↳ app/controllers/tasks_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/tasks/2
+Completed 302 Found in 5ms (ActiveRecord: 1.3ms | Allocations: 2251)
+
+
+Started GET "/tasks/2" for 127.0.0.1 at 2022-01-27 20:42:06 -0600
+Processing by TasksController#show as TURBO_STREAM
+  Parameters: {"id"=>"2"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:63:in `set_task'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 487)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 2522)
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.2ms | Allocations: 3330)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2022-01-27 20:42:07 -0600
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered tasks/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1006)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 3062)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.3ms | Allocations: 3397)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2022-01-27 20:45:41 -0600
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered tasks/_task.html.erb (Duration: 0.3ms | Allocations: 23)
+  Rendered tasks/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 917)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 2985)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.6ms | Allocations: 3317)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2022-01-27 20:49:23 -0600
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/_task.html.erb (Duration: 0.6ms | Allocations: 244)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered tasks/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1593)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 3947)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.2ms | Allocations: 5004)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2022-01-27 20:53:04 -0600
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/_task.html.erb (Duration: 0.3ms | Allocations: 164)
+  Rendered tasks/_task.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered tasks/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1486)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 3826)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.2ms | Allocations: 4882)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2022-01-27 20:54:34 -0600
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/_task.html.erb (Duration: 0.6ms | Allocations: 195)
+  Rendered tasks/_task.html.erb (Duration: 0.2ms | Allocations: 39)
+  Rendered tasks/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1433)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 3776)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.3ms | Allocations: 4831)
+
+
+Started GET "/tasks/2" for 127.0.0.1 at 2022-01-27 20:54:42 -0600
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:63:in `set_task'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/_task.html.erb (Duration: 0.2ms | Allocations: 55)
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 701)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 2739)
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.2ms | Allocations: 3622)
+
+
+Started GET "/tasks/2/edit" for 127.0.0.1 at 2022-01-27 20:54:46 -0600
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:63:in `set_task'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 2.4ms | Allocations: 1738)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2083)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 4122)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.2ms | Allocations: 4980)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2022-01-27 20:54:50 -0600
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/_task.html.erb (Duration: 0.2ms | Allocations: 55)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1002)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 3058)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.3ms | Allocations: 3393)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2022-01-27 20:56:31 -0600
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 2.6ms | Allocations: 1721)
+  Rendered tasks/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2036)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 4359)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 5396)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2022-01-27 20:56:39 -0600
+Processing by TasksController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"description"=>"This is a third task", "complete"=>"0", "important"=>"1", "urgent"=>"0"}, "commit"=>"Create Task"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:27:in `block in create'
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("description", "complete", "important", "urgent", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["description", "This is a third task"], ["complete", false], ["important", true], ["urgent", false], ["created_at", "2022-01-28 02:56:39.196283"], ["updated_at", "2022-01-28 02:56:39.196283"]]
+  ↳ app/controllers/tasks_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/tasks/3
+Completed 302 Found in 5ms (ActiveRecord: 1.4ms | Allocations: 2244)
+
+
+Started GET "/tasks/3" for 127.0.0.1 at 2022-01-27 20:56:39 -0600
+Processing by TasksController#show as TURBO_STREAM
+  Parameters: {"id"=>"3"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:63:in `set_task'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/_task.html.erb (Duration: 0.9ms | Allocations: 171)
+  Rendered tasks/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 981)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 3016)
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.2ms | Allocations: 3949)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2022-01-27 20:59:42 -0600
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:12
+  Rendered tasks/_task.html.erb (Duration: 0.5ms | Allocations: 187)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1577)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 3917)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.2ms | Allocations: 4974)
+
+
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."complete" = $1[0m  [["complete", true]]
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."urgent" = $1[0m  [["urgent", true]]
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."urgent" = $1 AND "tasks"."important" = $2[0m  [["urgent", true], ["important", true]]
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."complete" = $1[0m  [["complete", true]]
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."important" = $1 AND "tasks"."urgent" = $2[0m  [["important", true], ["urgent", true]]
+Started GET "/tasks" for 127.0.0.1 at 2022-01-27 21:05:40 -0600
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."urgent" = $1 AND "tasks"."important" = $2[0m  [["urgent", true], ["important", true]]
+  ↳ app/views/tasks/index.html.erb:12
+  Rendered tasks/_task.html.erb (Duration: 0.8ms | Allocations: 200)
+  Rendered tasks/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 3400)
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 16939)
+Completed 200 OK in 29ms (Views: 24.7ms | ActiveRecord: 2.0ms | Allocations: 19222)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2022-01-27 21:06:39 -0600
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."urgent" = $1 AND "tasks"."important" = $2[0m  [["urgent", true], ["important", true]]
+  ↳ app/views/tasks/index.html.erb:12
+  Rendered tasks/_task.html.erb (Duration: 0.8ms | Allocations: 187)
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."important" = $1[0m  [["important", true]]
+  ↳ app/views/tasks/index.html.erb:19
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."urgent" = $1[0m  [["urgent", true]]
+  ↳ app/views/tasks/index.html.erb:28
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:35
+  Rendered tasks/_task.html.erb (Duration: 0.4ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/index.html.erb within layouts/application (Duration: 26.1ms | Allocations: 4351)
+  Rendered layout layouts/application.html.erb (Duration: 29.1ms | Allocations: 6692)
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.8ms | Allocations: 7747)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2022-01-27 21:08:16 -0600
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."urgent" = $1 AND "tasks"."important" = $2[0m  [["urgent", true], ["important", true]]
+  ↳ app/views/tasks/index.html.erb:12
+  Rendered tasks/_task.html.erb (Duration: 1.1ms | Allocations: 187)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."important" = $1 /* loading for inspect */ LIMIT $2[0m  [["important", true], ["LIMIT", 11]]
+  [1m[36mCACHE Task Load (0.0ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."important" = $1 /* loading for inspect */ LIMIT $2[0m  [["important", true], ["LIMIT", 11]]
+  Rendered tasks/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 6941)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 7020)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.5ms | Allocations: 8056)
+
+
+  
+ActionView::Template::Error (undefined method `not' for #<ActiveRecord::Relation [#<Task id: 2, description: "This is another task", complete: false, important: true, urgent: true, created_at: "2022-01-28 02:42:06.559161000 +0000", updated_at: "2022-01-28 02:42:06.559161000 +0000">, #<Task id: 3, description: "This is a third task", complete: false, important: true, urgent: false, created_at: "2022-01-28 02:56:39.196283000 +0000", updated_at: "2022-01-28 02:56:39.196283000 +0000">]>
+Did you mean?  none):
+    16:       </td>
+    17:       <td>
+    18:         <ul id="tasks">
+    19:           <% @tasks.important.not(:urgent).each do |task| %>
+    20:             <%= render task %>
+    21:           <% end %>
+    22:         </ul>
+  
+app/views/tasks/index.html.erb:19
+Started PUT "/__web_console/repl_sessions/8fc22e86fa275b9cc0e92e91f5b9b3cc" for 127.0.0.1 at 2022-01-27 21:08:32 -0600
+Started PUT "/__web_console/repl_sessions/8fc22e86fa275b9cc0e92e91f5b9b3cc" for 127.0.0.1 at 2022-01-27 21:08:35 -0600
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+Started PUT "/__web_console/repl_sessions/8fc22e86fa275b9cc0e92e91f5b9b3cc" for 127.0.0.1 at 2022-01-27 21:08:53 -0600
+Started PUT "/__web_console/repl_sessions/8fc22e86fa275b9cc0e92e91f5b9b3cc" for 127.0.0.1 at 2022-01-27 21:08:56 -0600
+Started PUT "/__web_console/repl_sessions/8fc22e86fa275b9cc0e92e91f5b9b3cc" for 127.0.0.1 at 2022-01-27 21:09:10 -0600
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."important" = $1 /* loading for inspect */ LIMIT $2[0m  [["important", true], ["LIMIT", 11]]
+Started GET "/tasks" for 127.0.0.1 at 2022-01-27 21:09:29 -0600
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."urgent" = $1 AND "tasks"."important" = $2[0m  [["urgent", true], ["important", true]]
+  ↳ app/views/tasks/index.html.erb:12
+  Rendered tasks/_task.html.erb (Duration: 0.5ms | Allocations: 187)
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."important" = $1[0m  [["important", true]]
+  ↳ app/views/tasks/index.html.erb:19
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.3ms | Allocations: 39)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."urgent" = $1[0m  [["urgent", true]]
+  ↳ app/views/tasks/index.html.erb:28
+  Rendered tasks/_task.html.erb (Duration: 0.2ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:35
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 4294)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 6648)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.8ms | Allocations: 7704)
+
+
+Started GET "/tasks/2" for 127.0.0.1 at 2022-01-27 21:09:47 -0600
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:63:in `set_task'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/_task.html.erb (Duration: 0.2ms | Allocations: 55)
+  Rendered tasks/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 694)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 2729)
+Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 0.3ms | Allocations: 4164)
+
+
+Started GET "/tasks/2/edit" for 127.0.0.1 at 2022-01-27 21:09:58 -0600
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:63:in `set_task'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 3.9ms | Allocations: 1738)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2083)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 4118)
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.2ms | Allocations: 4976)
+
+
+Started GET "/tasks/2/edit" for 127.0.0.1 at 2022-01-27 21:10:04 -0600
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:63:in `set_task'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 1.6ms | Allocations: 1259)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1379)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 3414)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.2ms | Allocations: 4219)
+
+
+Started PATCH "/tasks/2" for 127.0.0.1 at 2022-01-27 21:10:11 -0600
+Processing by TasksController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"description"=>"Important and Urgent", "complete"=>"0", "important"=>"1", "urgent"=>"1"}, "commit"=>"Update Task", "id"=>"2"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:63:in `set_task'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:40:in `block in update'
+  [1m[36mTask Update (0.3ms)[0m  [1m[33mUPDATE "tasks" SET "description" = $1, "updated_at" = $2 WHERE "tasks"."id" = $3[0m  [["description", "Important and Urgent"], ["updated_at", "2022-01-28 03:10:11.518098"], ["id", 2]]
+  ↳ app/controllers/tasks_controller.rb:40:in `block in update'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:40:in `block in update'
+Redirected to http://127.0.0.1:3000/tasks/2
+Completed 302 Found in 8ms (ActiveRecord: 2.2ms | Allocations: 2773)
+
+
+Started GET "/tasks/2" for 127.0.0.1 at 2022-01-27 21:10:11 -0600
+Processing by TasksController#show as TURBO_STREAM
+  Parameters: {"id"=>"2"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:63:in `set_task'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/_task.html.erb (Duration: 0.2ms | Allocations: 55)
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 546)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2581)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.2ms | Allocations: 3436)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2022-01-27 21:10:12 -0600
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."urgent" = $1 AND "tasks"."important" = $2[0m  [["urgent", true], ["important", true]]
+  ↳ app/views/tasks/index.html.erb:12
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 55)
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."important" = $1[0m  [["important", true]]
+  ↳ app/views/tasks/index.html.erb:19
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."urgent" = $1[0m  [["urgent", true]]
+  ↳ app/views/tasks/index.html.erb:28
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:35
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 3644)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 5700)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.7ms | Allocations: 6035)
+
+
+Started GET "/tasks/3" for 127.0.0.1 at 2022-01-27 21:10:15 -0600
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:63:in `set_task'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/_task.html.erb (Duration: 0.2ms | Allocations: 55)
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 496)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 2531)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 3336)
+
+
+Started GET "/tasks/3/edit" for 127.0.0.1 at 2022-01-27 21:10:16 -0600
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:63:in `set_task'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 1.6ms | Allocations: 1270)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1390)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 3425)
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.2ms | Allocations: 4230)
+
+
+Started PATCH "/tasks/3" for 127.0.0.1 at 2022-01-27 21:10:23 -0600
+Processing by TasksController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"description"=>"Important Only", "complete"=>"0", "important"=>"1", "urgent"=>"0"}, "commit"=>"Update Task", "id"=>"3"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:63:in `set_task'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:40:in `block in update'
+  [1m[36mTask Update (0.4ms)[0m  [1m[33mUPDATE "tasks" SET "description" = $1, "updated_at" = $2 WHERE "tasks"."id" = $3[0m  [["description", "Important Only"], ["updated_at", "2022-01-28 03:10:23.122503"], ["id", 3]]
+  ↳ app/controllers/tasks_controller.rb:40:in `block in update'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:40:in `block in update'
+Redirected to http://127.0.0.1:3000/tasks/3
+Completed 302 Found in 7ms (ActiveRecord: 1.7ms | Allocations: 2688)
+
+
+Started GET "/tasks/3" for 127.0.0.1 at 2022-01-27 21:10:23 -0600
+Processing by TasksController#show as TURBO_STREAM
+  Parameters: {"id"=>"3"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:63:in `set_task'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/_task.html.erb (Duration: 0.2ms | Allocations: 55)
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 503)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2538)
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.2ms | Allocations: 3346)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2022-01-27 21:10:24 -0600
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."urgent" = $1 AND "tasks"."important" = $2[0m  [["urgent", true], ["important", true]]
+  ↳ app/views/tasks/index.html.erb:12
+  Rendered tasks/_task.html.erb (Duration: 0.2ms | Allocations: 55)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."important" = $1[0m  [["important", true]]
+  ↳ app/views/tasks/index.html.erb:19
+  Rendered tasks/_task.html.erb (Duration: 0.2ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."urgent" = $1[0m  [["urgent", true]]
+  ↳ app/views/tasks/index.html.erb:28
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:35
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 3652)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 5708)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 1.1ms | Allocations: 6043)
+
+
+Started GET "/tasks/1" for 127.0.0.1 at 2022-01-27 21:10:26 -0600
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:63:in `set_task'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/_task.html.erb (Duration: 0.2ms | Allocations: 55)
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 496)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 2531)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 3336)
+
+
+Started GET "/tasks/1/edit" for 127.0.0.1 at 2022-01-27 21:10:27 -0600
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:63:in `set_task'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 2.4ms | Allocations: 1278)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1398)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 3433)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.2ms | Allocations: 4238)
+
+
+Started PATCH "/tasks/1" for 127.0.0.1 at 2022-01-27 21:10:32 -0600
+Processing by TasksController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"description"=>"Urgent Only", "complete"=>"0", "important"=>"0", "urgent"=>"1"}, "commit"=>"Update Task", "id"=>"1"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:63:in `set_task'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:40:in `block in update'
+  [1m[36mTask Update (0.2ms)[0m  [1m[33mUPDATE "tasks" SET "description" = $1, "updated_at" = $2 WHERE "tasks"."id" = $3[0m  [["description", "Urgent Only"], ["updated_at", "2022-01-28 03:10:32.277251"], ["id", 1]]
+  ↳ app/controllers/tasks_controller.rb:40:in `block in update'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:40:in `block in update'
+Redirected to http://127.0.0.1:3000/tasks/1
+Completed 302 Found in 6ms (ActiveRecord: 1.5ms | Allocations: 2691)
+
+
+Started GET "/tasks/1" for 127.0.0.1 at 2022-01-27 21:10:32 -0600
+Processing by TasksController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:63:in `set_task'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/_task.html.erb (Duration: 0.2ms | Allocations: 55)
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 517)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 2552)
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 0.3ms | Allocations: 3360)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2022-01-27 21:10:34 -0600
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."urgent" = $1 AND "tasks"."important" = $2[0m  [["urgent", true], ["important", true]]
+  ↳ app/views/tasks/index.html.erb:12
+  Rendered tasks/_task.html.erb (Duration: 0.2ms | Allocations: 55)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."important" = $1[0m  [["important", true]]
+  ↳ app/views/tasks/index.html.erb:19
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."urgent" = $1[0m  [["urgent", true]]
+  ↳ app/views/tasks/index.html.erb:28
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:35
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 3652)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 5716)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.6ms | Allocations: 6052)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2022-01-27 21:10:35 -0600
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 1.5ms | Allocations: 1223)
+  Rendered tasks/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1475)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 3522)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 3923)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2022-01-27 21:10:38 -0600
+Processing by TasksController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"description"=>"Neither", "complete"=>"0", "important"=>"0", "urgent"=>"0"}, "commit"=>"Create Task"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:27:in `block in create'
+  [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("description", "complete", "important", "urgent", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["description", "Neither"], ["complete", false], ["important", false], ["urgent", false], ["created_at", "2022-01-28 03:10:38.687110"], ["updated_at", "2022-01-28 03:10:38.687110"]]
+  ↳ app/controllers/tasks_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/tasks/4
+Completed 302 Found in 7ms (ActiveRecord: 2.3ms | Allocations: 2257)
+
+
+Started GET "/tasks/4" for 127.0.0.1 at 2022-01-27 21:10:38 -0600
+Processing by TasksController#show as TURBO_STREAM
+  Parameters: {"id"=>"4"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:63:in `set_task'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/_task.html.erb (Duration: 0.2ms | Allocations: 55)
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 497)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2532)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.2ms | Allocations: 3340)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2022-01-27 21:10:40 -0600
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."urgent" = $1 AND "tasks"."important" = $2[0m  [["urgent", true], ["important", true]]
+  ↳ app/views/tasks/index.html.erb:12
+  Rendered tasks/_task.html.erb (Duration: 0.2ms | Allocations: 55)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."important" = $1[0m  [["important", true]]
+  ↳ app/views/tasks/index.html.erb:19
+  Rendered tasks/_task.html.erb (Duration: 0.2ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."urgent" = $1[0m  [["urgent", true]]
+  ↳ app/views/tasks/index.html.erb:28
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:35
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 3766)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 5822)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.7ms | Allocations: 6157)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2022-01-27 21:11:44 -0600
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."urgent" = $1 AND "tasks"."important" = $2[0m  [["urgent", true], ["important", true]]
+  ↳ app/views/tasks/index.html.erb:12
+  Rendered tasks/_task.html.erb (Duration: 0.5ms | Allocations: 187)
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."important" = $1[0m  [["important", true]]
+  ↳ app/views/tasks/index.html.erb:19
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."urgent" = $1[0m  [["urgent", true]]
+  ↳ app/views/tasks/index.html.erb:28
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:35
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 4420)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 6760)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.6ms | Allocations: 7814)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2022-01-27 21:11:56 -0600
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."urgent" = $1 AND "tasks"."important" = $2[0m  [["urgent", true], ["important", true]]
+  ↳ app/views/tasks/index.html.erb:12
+  Rendered tasks/_task.html.erb (Duration: 0.4ms | Allocations: 55)
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."important" = $1[0m  [["important", true]]
+  ↳ app/views/tasks/index.html.erb:19
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."urgent" = $1[0m  [["urgent", true]]
+  ↳ app/views/tasks/index.html.erb:28
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:35
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 3772)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 5840)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.6ms | Allocations: 6173)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2022-01-27 21:13:13 -0600
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."urgent" = $1 AND "tasks"."important" = $2[0m  [["urgent", true], ["important", true]]
+  ↳ app/views/tasks/index.html.erb:12
+  Rendered tasks/_task.html.erb (Duration: 0.7ms | Allocations: 187)
+  Rendered tasks/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 5552)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 5631)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.1ms | Allocations: 6650)
+
+
+  
+ActionView::Template::Error (undefined method `where' for #<ActionView::Base:0x00000000014af0>
+Did you mean?  when):
+    16:       </td>
+    17:       <td>
+    18:         <ul id="tasks">
+    19:           <% @tasks.important.not(where(:urgent)).each do |task| %>
+    20:             <%= render task %>
+    21:           <% end %>
+    22:         </ul>
+  
+app/views/tasks/index.html.erb:19
+Started GET "/tasks" for 127.0.0.1 at 2022-01-27 21:14:28 -0600
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."urgent" = $1 AND "tasks"."important" = $2[0m  [["urgent", true], ["important", true]]
+  ↳ app/views/tasks/index.html.erb:12
+  Rendered tasks/_task.html.erb (Duration: 0.9ms | Allocations: 187)
+  Rendered tasks/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2690)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 2769)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms | Allocations: 3791)
+
+
+  
+ActionView::Template::Error (Unsupported argument type: urgent (Symbol)):
+    16:       </td>
+    17:       <td>
+    18:         <ul id="tasks">
+    19:           <% @tasks.important.where.not(:urgent).each do |task| %>
+    20:             <%= render task %>
+    21:           <% end %>
+    22:         </ul>
+  
+app/views/tasks/index.html.erb:19
+Started GET "/tasks" for 127.0.0.1 at 2022-01-27 21:15:35 -0600
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."urgent" = $1 AND "tasks"."important" = $2[0m  [["urgent", true], ["important", true]]
+  ↳ app/views/tasks/index.html.erb:12
+  Rendered tasks/_task.html.erb (Duration: 0.7ms | Allocations: 187)
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."important" = $1 AND "tasks"."urgent" = $2[0m  [["important", true], ["urgent", false]]
+  ↳ app/views/tasks/index.html.erb:19
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."urgent" = $1 AND "tasks"."important" = $2[0m  [["urgent", true], ["important", false]]
+  ↳ app/views/tasks/index.html.erb:28
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."urgent" = $1 AND "tasks"."important" = $2[0m  [["urgent", false], ["important", false]]
+  ↳ app/views/tasks/index.html.erb:35
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 4024)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 6378)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.7ms | Allocations: 7433)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2022-01-27 21:15:46 -0600
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 2.4ms | Allocations: 1701)
+  Rendered tasks/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2004)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 4047)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 4440)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2022-01-27 21:15:54 -0600
+Processing by TasksController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"description"=>"This is a new urgent task", "complete"=>"0", "important"=>"0", "urgent"=>"1"}, "commit"=>"Create Task"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:27:in `block in create'
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("description", "complete", "important", "urgent", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["description", "This is a new urgent task"], ["complete", false], ["important", false], ["urgent", true], ["created_at", "2022-01-28 03:15:54.080791"], ["updated_at", "2022-01-28 03:15:54.080791"]]
+  ↳ app/controllers/tasks_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/tasks/5
+Completed 302 Found in 6ms (ActiveRecord: 1.8ms | Allocations: 2239)
+
+
+Started GET "/tasks/5" for 127.0.0.1 at 2022-01-27 21:15:54 -0600
+Processing by TasksController#show as TURBO_STREAM
+  Parameters: {"id"=>"5"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:63:in `set_task'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 770)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 2805)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.2ms | Allocations: 3737)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2022-01-27 21:15:55 -0600
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."urgent" = $1 AND "tasks"."important" = $2[0m  [["urgent", true], ["important", true]]
+  ↳ app/views/tasks/index.html.erb:12
+  Rendered tasks/_task.html.erb (Duration: 0.2ms | Allocations: 55)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."important" = $1 AND "tasks"."urgent" = $2[0m  [["important", true], ["urgent", false]]
+  ↳ app/views/tasks/index.html.erb:19
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."urgent" = $1 AND "tasks"."important" = $2[0m  [["urgent", true], ["important", false]]
+  ↳ app/views/tasks/index.html.erb:28
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 40)
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."urgent" = $1 AND "tasks"."important" = $2[0m  [["urgent", false], ["important", false]]
+  ↳ app/views/tasks/index.html.erb:35
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 3495)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 5551)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.6ms | Allocations: 5886)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2022-01-27 21:18:25 -0600
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."urgent" = $1 AND "tasks"."important" = $2[0m  [["urgent", true], ["important", true]]
+  ↳ app/views/tasks/index.html.erb:12
+  Rendered tasks/_task.html.erb (Duration: 0.8ms | Allocations: 187)
+  [1m[36mTask Load (2.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."important" = $1 AND "tasks"."urgent" = $2[0m  [["important", true], ["urgent", false]]
+  ↳ app/views/tasks/index.html.erb:19
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."urgent" = $1 AND "tasks"."important" = $2[0m  [["urgent", true], ["important", false]]
+  ↳ app/views/tasks/index.html.erb:28
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 40)
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."urgent" = $1 AND "tasks"."important" = $2[0m  [["urgent", false], ["important", false]]
+  ↳ app/views/tasks/index.html.erb:35
+  Rendered tasks/_task.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered tasks/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 4154)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 6494)
+Completed 200 OK in 17ms (Views: 12.8ms | ActiveRecord: 3.5ms | Allocations: 7548)
+
+
